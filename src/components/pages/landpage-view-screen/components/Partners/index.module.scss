@@ -1,0 +1,40 @@
+.bosta_partners{
+    padding: 5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    &-subtitle{
+        font-size: 1.8rem;
+        font-weight: 500;
+        max-width: 80rem;
+        text-align: center;
+
+    }
+    &-slider{
+        height: 20rem;
+        background-color: transparent !important;
+        &-wrapper{
+            display: flex;
+            justify-content: center;
+            align-items: center;        
+            img{
+                margin:  0 2rem;
+                height: 4rem;
+                object-fit: cover;
+                @media screen and(max-width:950px) {
+                    flex-direction: column;
+                    height: 2rem;
+                    margin: 0.6rem 0;
+                    
+                }
+            }
+            @media screen and(max-width:950px) {
+                flex-direction: column; 
+            }
+
+        }
+    }
+
+}

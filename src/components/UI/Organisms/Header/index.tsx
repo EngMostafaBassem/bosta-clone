@@ -1,7 +1,7 @@
 import React, { useContext, useState } from 'react'
 import styles from './index.module.scss'
-import { Menu, Dropdown, Space,Input  } from 'antd';
-import { DownOutlined, SmileOutlined ,SearchOutlined,MenuOutlined  } from '@ant-design/icons';
+import { Input} from 'antd';
+import { DownOutlined,SearchOutlined,MenuOutlined  } from '@ant-design/icons';
 import LocalContext from '../../../../context/LocalContext';
 import i18n from '../../../../i18n';
 import { useTranslation } from 'react-i18next';
@@ -49,7 +49,7 @@ const Header=()=>{
            }
              </li>        
              <li className={styles['bosta_header-list-item']}><a  href='#signIn'>{t('signIn')}</a></li>
-             <li className={styles['bosta_header-list-item']}><a  href='#' style={{color:'red'}} onClick={()=>changeLocale(locale=='ar'?'en':'ar')}>{locale=='en'?'عربي':'English'}</a></li>
+             <li className={styles['bosta_header-list-item']}><a  href='#' style={{color:'red'}} onClick={()=>changeLocale(locale=='ar'?'en':'ar')}>{locale=='en'?'عربي':'ENG'}</a></li>
             </ul>
         
            <MenuOutlined className= {styles['mobile-menu']} onClick={()=>setMenuView(menuView=>!menuView)}/>
@@ -68,14 +68,11 @@ const Header=()=>{
                      </div>
                  </li>        
                   <li className={styles['mobile-view-menu-list-item']}><a  href='#signIn'>{t('signIn')}</a></li>
+                  <li className={styles['mobile-view-menu-list-item']}><a  href='#' style={{color:'red'}} onClick={()=>changeLocale(locale=='ar'?'en':'ar')}>{locale=='en'?'عربي':'ENG'}</a></li>
                  </ul>
                 </div>
                )
            }
-         
-          
-           
-           
         </div>
     )
 

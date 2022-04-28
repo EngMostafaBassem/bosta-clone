@@ -1,0 +1,61 @@
+.bosta_pricing{
+    padding: 10rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  
+    &-title{
+     width: 100%;
+     display: flex;
+     justify-content: center;
+     span{
+         font-size: 5rem;
+         color: black;
+         font-weight: 800;
+         display: block;
+
+         @media screen and(max-width:1095px) {
+             font-size: 2.5rem;
+         }
+         @media screen and(max-width:620px){
+            font-size: 1.5rem;
+          }
+        
+     }
+     img{
+        margin: 0 2rem;
+        max-width: 30rem;
+        @media screen and(max-width:620px){
+            max-width: 15rem;
+          }
+    }
+    }
+    &-subtitle{     
+        font-size: 2.5rem;
+        color: black;
+        font-weight: 600;
+        display: block;
+        text-align: center;
+        @media screen and(max-width:1095px) {
+            font-size: 1.5rem;
+        }
+        
+  
+    }
+    &-vat{
+     font-weight: 600;
+     color: gray;
+     font-size: 2rem;
+     text-align: center;
+
+     @media screen and(max-width:620px){
+        font-size: 1.2rem;
+      }
+     
+    }
+  @media screen and(max-width:780px){
+    padding: 2rem;
+  }
+
+}

@@ -1,0 +1,60 @@
+.bosta_coverage{
+    background-blend-mode: overlay;
+    background-image: url(https://bosta.co/wp-content/uploads/2019/09/bosta-map-banner.png);
+    background-color: rgba(0,0,0,0.75);
+    background-position: center;
+    background-size: cover;
+    
+    display: flex;
+    max-height: 50rem;
+    &-content{ 
+        padding: 10rem;       
+        &-title{       
+            font-size: 5rem;
+            font-weight: 800;
+            color: white;
+            margin-bottom: 1rem; 
+            @media screen and (max-width:1228px) {
+                font-size: 3rem;
+                
+            }
+        }
+        &-subtitle{     
+            font-size: 2rem;
+            font-weight: 600;
+            color: white;
+            max-width: 60rem;
+            @media screen and (max-width:1228px) {
+                font-size: 1.5rem;         
+            }
+    
+        }
+
+        @media screen and (max-width:1080px) {
+            padding: 2rem;           
+        }
+
+    }
+    &-img{
+        max-width: 60rem;
+        margin-left: auto;
+        img{
+            width: 100%;
+            object-fit: cover;
+        }
+        @media screen and (max-width:1080px) {
+            max-width: 30rem;         
+        }
+
+    }
+
+    @media screen and (max-width:1080px) {
+        flex-direction: column;
+    }
+
+    @media screen and (max-width:980px) {
+        padding: 3rem;
+    }
+  
+   
+}

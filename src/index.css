@@ -1,6 +1,6 @@
 
 /* intital setup for css*/
-@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;500;600&family=Manrope&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;500;600;800&family=Manrope&display=swap');
 
 *{
   padding: 0;
@@ -19,7 +19,7 @@ html,body{
 
 body {
   margin: 0;
-  font-family: 'Cairo', sans-serif;
+  font-family: 'Cairo' !important;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   
@@ -36,4 +36,15 @@ ul{
 }
 a{
   text-decoration: none;
+}
+/* Add customs styles tp react slider*/
+.awssld__content{
+  background-color: transparent !important;
+}
+
+.awssld__bullets .awssld__bullets--active {
+  background: red !important;
+}
+.awssld__next,.awssld__prev{
+  opacity: 0;
 }

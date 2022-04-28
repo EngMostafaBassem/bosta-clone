@@ -1,0 +1,47 @@
+.card{
+    background-color: white;
+    -webkit-box-shadow: 0px 0px 9px -4px rgba(66, 68, 90, 1);
+    -moz-box-shadow: 0px 0px 9px -4px rgba(66, 68, 90, 1);
+     box-shadow: 0px 0px 9px -4px rgba(66, 68, 90, 1);
+     max-width: 50rem;
+     padding: 2rem 4rem;
+     border-radius: 1rem;
+     margin: 2rem;
+     cursor: pointer;
+
+    &_title{
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        &-ico{
+            width: 2rem;
+            height: 2rem;
+            border: 1px solid black;
+            border-radius: 50%;
+            
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+        }
+        &-text{
+            color: black;
+            font-size: 2rem;
+            font-weight: 800;
+            margin: 0 1rem;
+
+            @media screen  and (max-width:980px){
+                font-size: 1.6rem;
+           }
+          
+        }
+    }
+    &_body{
+        font-weight: 600;
+        font-size: 1.6rem;
+
+    }
+    &:hover .card_title>.card_title-text{
+        color: red;
+    }
+}

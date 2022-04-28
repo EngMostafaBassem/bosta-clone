@@ -1,5 +1,10 @@
 /* styles for header*/
 .bosta_header{
+    position: sticky;
+    background-color: white;
+    top:0;
+    left:0;
+    width: 100%;
     display: flex;
     align-items: center;
     height: 6.5rem;
@@ -8,7 +13,8 @@
     -webkit-box-shadow: 0px 0px 9px -4px rgba(66, 68, 90, 1);
     -moz-box-shadow: 0px 0px 9px -4px rgba(66, 68, 90, 1);
      box-shadow: 0px 0px 9px -4px rgba(66, 68, 90, 1);
-     position: relative;
+     z-index: 150;
+  
     &-logo{
         margin-right: 5rem;
         outline: none;
@@ -61,8 +67,10 @@
             }
             &:nth-child(5){
                 cursor: pointer;
-                position: relative;
+                position: relative;     
                 .track-ship-container{
+                    z-index: 100;
+                    background-color: white;
                     -webkit-box-shadow: 0px 0px 9px -4px rgba(66, 68, 90, 1);
                     -moz-box-shadow: 0px 0px 9px -4px rgba(66, 68, 90, 1);
                      box-shadow: 0px 0px 9px -4px rgba(66, 68, 90, 1);
@@ -72,7 +80,8 @@
                      padding: 2rem;         
                      width:35rem;
                      .track-ship-title{
-                        font-weight:'bold',
+                        font-weight:'bold';
+                        color:red
                     }
                     .track-ship-subtitle{
                         color:#555;
@@ -113,8 +122,6 @@
         }
 
     }
-
-   
     .mobile-menu
     {
         color: red;
@@ -123,18 +130,19 @@
         font-size: 2rem;      
         @media screen and (max-width:980px) {
             display: block;
-
-            
+       
          }
     }
 
 
     .mobile-view-menu{
+        z-index: 100;
         position: absolute;
         width: 80%;
         top: 6rem;
         left: 10%;
         transform: translateX(-50%);  
+        background-color: white;
         -webkit-box-shadow: 0px 0px 9px -4px rgba(66, 68, 90, 1);
         -moz-box-shadow: 0px 0px 9px -4px rgba(66, 68, 90, 1);
          box-shadow: 0px 0px 9px -4px rgba(66, 68, 90, 1);
