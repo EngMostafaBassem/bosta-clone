@@ -15,7 +15,6 @@ function App() {
     setLocale
   }
   i18n.on('languageChanged', (lng) =>{
-    console.log('languae to change',lng)
     setLocale(i18n.language)
   } );
   return (

@@ -10,7 +10,7 @@ const Hero=()=>{
     const { t } = useTranslation();
     const clipPathStyles={
         ar:'polygon(0 0, 100% 0, 100% 76%, 0 100%)',
-        en:'polygon(0 0, 100% 0, 100% 100%, 0 76%);'
+        en:'polygon(0 0, 100% 0, 100% 100%, 0 76%)'
     }
   
     return(
