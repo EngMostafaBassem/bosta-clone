@@ -5,6 +5,7 @@ import LocalContext from './context/LocalContext';
 import { ConfigProvider } from 'antd';
 import {Routes,Route,BrowserRouter} from 'react-router-dom'
 import Landpage from './components/pages/landpage-view-screen';
+import Spinner from './components/UI/Atoms/Spinner';
 function App() {
 
   const [locale, setLocale] = useState(i18n.language);
@@ -20,7 +21,7 @@ function App() {
   return (
     <BrowserRouter>
      <LocalContext.Provider value={defaultValue}>
-       <Suspense fallback={<p>Loading...</p>}>
+       <Suspense fallback={<Spinner/>}>    
          <ConfigProvider direction={locale === 'en' ? 'ltr' : 'rtl'}>
            <Routes>
              <Route path='/' element={<Landpage/>}/>

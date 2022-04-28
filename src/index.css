@@ -48,3 +48,6 @@ a{
 .awssld__next,.awssld__prev{
   opacity: 0;
 }
+.ant-spin-dot-item { 
+  background-color:red !important ;
+}
