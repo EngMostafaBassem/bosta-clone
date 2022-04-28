@@ -41,7 +41,7 @@ const Header=()=>{
                 <h2 className={styles['track-ship-title']}>{t('trackYourShipment')}</h2>
                 <p className={styles['track-ship-subtitle']}>{t('enterYourTrackingNumber')}</p>
                 <div className={styles['form-control']}>
-                  <Input  className={styles['form-control-input']} placeholder={t('trackingNumber')} />
+                  <Input  className={styles['form-control-input']} placeholder={t('trackingNumber')} type='number'/>
                    <div className={styles['form-control-btn']}><SearchOutlined style={{color:'white',fontWeight:'bold'}} /></div>
                 </div>
               </div>
@@ -63,7 +63,7 @@ const Header=()=>{
                   <li className={styles['mobile-view-menu-list-item']}><a  href='#carrer'>{t('career')}</a></li>
                   <li className={styles['mobile-view-menu-list-item']}>
                       <div className={styles['form-control-mobile-view']}>
-                       <Input  className={styles['form-control-input-mobile-view']} placeholder={t('trackingShipment')} />
+                       <Input  className={styles['form-control-input-mobile-view']} placeholder={t('trackingShipment')} type='number'/>
                         <div className={styles['form-control-btn-mobile-view']}><SearchOutlined style={{color:'white',fontWeight:'bold'}} /></div>
                      </div>
                  </li>        
