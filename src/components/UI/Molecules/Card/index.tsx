@@ -12,7 +12,7 @@ interface CardProps{
 const Card:React.FC<CardProps>=({title,body,Icon,onClick})=>{
     const { locale } = useContext(LocalContext);
     return(
-        <div className={styles['card']} onClick={onClick} dir={locale==='en'?'ltr':'rtl'}>
+        <div className={styles['card']} onClick={onClick} dir={locale==='ar'?'rtl':'ltr'}>
             <div className={styles['card_title']}>
               {Icon&& <div  className={styles['card_title-ico']}><Icon/></div>}
               <a  className={styles['card_title-text']} href="#">{title}</a>

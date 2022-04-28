@@ -4,12 +4,10 @@ import styles from './index.module.scss'
 import { CompassOutlined,DollarCircleOutlined,CommentOutlined   } from '@ant-design/icons';
 import Head from '../../../../UI/Atoms/Head';
 import Button from '../../../../UI/Atoms/Button';
-import LocalContext from '../../../../../context/LocalContext';
 import { useTranslation } from 'react-i18next';
 const Tasks=()=>{
     const [choice,setChoice]=useState("choice1")
     const handleChoice=(choice:string)=>setChoice(choice)
-    const { locale } = useContext(LocalContext);
     const { t } = useTranslation();
     return(
         <div className={styles['bosta_tasks']}>

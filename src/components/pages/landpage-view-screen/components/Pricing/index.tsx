@@ -14,7 +14,7 @@ const Pricing=()=>{
         <div className={styles['bosta_pricing']} dir={locale==='en'?'ltr':'rtl'}>
             <div className={styles['bosta_pricing-title']}>
                 <span>{t('startingFrom')}</span>
-                 <img src={locale==='en'?pricingImg.en:pricingImg.ar} alt='price'/>
+                 <img src={locale==='ar'?pricingImg.ar:pricingImg.en} alt='price'/>
                 <span>{t('inCario')}</span>
                 </div>
             <p className={styles['bosta_pricing-subtitle']}>{t('pricingSubtitle')}</p>
