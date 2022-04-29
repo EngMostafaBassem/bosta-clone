@@ -33,7 +33,7 @@ const Header=()=>{
                 </Link>
             </div>
             <ul className={styles['bosta_header-list']} > 
-             <li className={styles['bosta_header-list-item']}><Link to="/">{t('home')}</Link> </li>
+             <li className={styles['bosta_header-list-item']}><Link to="/">{t('home')}</Link></li>
              <li className={styles['bosta_header-list-item']}><a  href='#pricing'>{t('pricing')}</a></li>
              <li className={styles['bosta_header-list-item']}><a  href='#contact-sales'>{t('contactSales')}</a></li>
              <li className={styles['bosta_header-list-item']}><a  href='#carrer'>{t('career')}</a></li>
@@ -63,7 +63,7 @@ const Header=()=>{
                menuView&&(
                 <div className={styles['mobile-view-menu']}>
                 <ul className={styles['mobile-view-menu-list']} > 
-                  <li className={styles['mobile-view-menu-list-item']}><a  href='#home'>{t('home')}</a></li>
+                  <li className={styles['mobile-view-menu-list-item']}><Link to="/">{t('home')}</Link> </li>
                   <li className={styles['mobile-view-menu-list-item']}><a  href='#pricing'>{t('pricing')}</a></li>
                   <li className={styles['mobile-view-menu-list-item']}><a  href='#contact-sales'>{t('contactSales')}</a></li>
                   <li className={styles['mobile-view-menu-list-item']}><a  href='#carrer'>{t('career')}</a></li>

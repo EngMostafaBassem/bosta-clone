@@ -51,3 +51,7 @@ a{
 .ant-spin-dot-item { 
   background-color:red !important ;
 }
+
+.ant-table-wrapper.ant-table-wrapper-rtl .ant-table-pagination-left,.ant-table-wrapper.ant-table-wrapper-rtl .ant-table-pagination-right {
+  justify-content: center !important;
+}

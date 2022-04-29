@@ -18,6 +18,11 @@
                 font-size: 3rem;
                 
             }
+
+            @media screen and (max-width:768px) {
+                font-size: 2rem;
+                
+            }
         }
         &-subtitle{     
             font-size: 2rem;
@@ -26,6 +31,10 @@
             max-width: 60rem;
             @media screen and (max-width:1228px) {
                 font-size: 1.5rem;         
+            }
+            @media screen and (max-width:768px) {
+                font-size: 1.2rem;
+                
             }
     
         }
