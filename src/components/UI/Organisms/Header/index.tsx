@@ -5,10 +5,14 @@ import { DownOutlined,SearchOutlined,MenuOutlined  } from '@ant-design/icons';
 import LocalContext from '../../../../context/LocalContext';
 import i18n from '../../../../i18n';
 import { useTranslation } from 'react-i18next';
+import {Link,useNavigate} from 'react-router-dom'
+
 
 const Header=()=>{  
    const[visible,setVisible]=useState(false)
    const [menuView,setMenuView]=useState(false)
+   const navigate=useNavigate()
+   const [tackNum,setTrackNum]=useState('')
    const logo={
        ar:'https://bosta.co/wp-content/uploads/2019/08/Component.svg',
        en:'https://bosta.co/wp-content/uploads/2019/08/bosta_logo_en_red.svg'
@@ -24,10 +28,12 @@ const Header=()=>{
     return(
         <div className={styles['bosta_header']} dir={locale==='en'?'ltr':'rtl'}>      
             <div className={styles['bosta_header-logo']}>
-                <img src={locale=='en'?logo.en:logo.ar} alt='logo for bosta'/>
+                <Link to="/">    
+                  <img src={locale=='en'?logo.en:logo.ar} alt='logo for bosta'/>
+                </Link>
             </div>
             <ul className={styles['bosta_header-list']} > 
-             <li className={styles['bosta_header-list-item']}><a  href='#home'>{t('home')}</a></li>
+             <li className={styles['bosta_header-list-item']}><Link to="/">{t('home')}</Link> </li>
              <li className={styles['bosta_header-list-item']}><a  href='#pricing'>{t('pricing')}</a></li>
              <li className={styles['bosta_header-list-item']}><a  href='#contact-sales'>{t('contactSales')}</a></li>
              <li className={styles['bosta_header-list-item']}><a  href='#carrer'>{t('career')}</a></li>
@@ -41,8 +47,8 @@ const Header=()=>{
                 <h2 className={styles['track-ship-title']}>{t('trackYourShipment')}</h2>
                 <p className={styles['track-ship-subtitle']}>{t('enterYourTrackingNumber')}</p>
                 <div className={styles['form-control']}>
-                  <Input  className={styles['form-control-input']} placeholder={t('trackingNumber')} type='number'/>
-                   <div className={styles['form-control-btn']}><SearchOutlined style={{color:'white',fontWeight:'bold'}} /></div>
+                  <Input  className={styles['form-control-input']} placeholder={t('trackingNumber')} type='number' value={tackNum} onChange={(e)=>setTrackNum(e.target.value)}/>
+                   <div className={styles['form-control-btn']} onClick={()=>tackNum&&navigate(`/shipments/track/${tackNum}`)}><SearchOutlined style={{color:'white',fontWeight:'bold'}} /></div>
                 </div>
               </div>
                )
@@ -63,8 +69,8 @@ const Header=()=>{
                   <li className={styles['mobile-view-menu-list-item']}><a  href='#carrer'>{t('career')}</a></li>
                   <li className={styles['mobile-view-menu-list-item']}>
                       <div className={styles['form-control-mobile-view']}>
-                       <Input  className={styles['form-control-input-mobile-view']} placeholder={t('trackingShipment')} type='number'/>
-                        <div className={styles['form-control-btn-mobile-view']}><SearchOutlined style={{color:'white',fontWeight:'bold'}} /></div>
+                       <Input  className={styles['form-control-input-mobile-view']} placeholder={t('trackingShipment')} type='number' value={tackNum} onChange={(e)=>setTrackNum(e.target.value)}/>
+                        <div className={styles['form-control-btn-mobile-view']} onClick={()=>tackNum&&navigate(`/shipments/track/${tackNum}`)}><SearchOutlined style={{color:'white',fontWeight:'bold'}} /></div>
                      </div>
                  </li>        
                   <li className={styles['mobile-view-menu-list-item']}><a  href='#signIn'>{t('signIn')}</a></li>
