@@ -6,6 +6,7 @@ import { ConfigProvider } from 'antd';
 import {Routes,Route,BrowserRouter} from 'react-router-dom'
 import Landpage from './components/pages/landpage-view-screen';
 import Spinner from './components/UI/Atoms/Spinner';
+import TrackShipment from './components/pages/track-shipment-view-screen'
 function App() {
 
   const [locale, setLocale] = useState(i18n.language);
@@ -24,6 +25,7 @@ function App() {
          <ConfigProvider direction={locale === 'en' ? 'ltr' : 'rtl'}>
            <Routes>
              <Route path='/' element={<Landpage/>}/>
+             <Route path='/shipments/track/:trackNum' element={<TrackShipment/>}/>
            </Routes> 
         </ConfigProvider>
       </Suspense>

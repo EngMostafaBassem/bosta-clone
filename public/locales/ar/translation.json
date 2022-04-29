@@ -37,7 +37,23 @@
     "startingFrom":"بداية من ",
     "inCario":"في القاهرة",
     "pricingSubtitle":"أسعارنا مناسبة لكل الشحنات بداية من 30 جنيه هتقدر تشحن وتوفر بأقل سعر للشحن وفي أسرع وقت",
-    "pricingVat":"الأسعار غير شاملة ضريبة القيمة المضافة*"
+    "pricingVat":"الأسعار غير شاملة ضريبة القيمة المضافة*",
+    "lastUpdate":"اخر تحديث",
+    "merchantName":"اسم التاجر",
+    "promisedData":"موعد التسليم خلال",
+    "shipmentCreated":"تم انشاء الشحنة",
+    "shipmentReceivedFromMerchant":"تم استلام الشحنة من التاجر",
+    "shipmentOutForDeleivery":"الشحنة خرجت للتسليم",
+    "shipmentDeliverd":"تم التسليم",
+    "shipmentDetails":"تفاصيل الشحنة ",
+    "branch":"الفرع",
+    "date":"التاريخ",
+    "time":"الوقت",
+    "details":"تفاصيل",
+    "addressName":"عنوان التسليم",
+    "IsthereProblemInYourShipment":" !هل يوجد مشكلة في شحنتك؟ ",
+    "reportProblem":"ابلاغ عن مشكلة "
+
   
 
     

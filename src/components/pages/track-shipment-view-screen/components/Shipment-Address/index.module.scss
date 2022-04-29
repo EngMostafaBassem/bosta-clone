@@ -1,0 +1,33 @@
+.bosta_shipmentAddress{
+    margin-top: 2rem;
+   
+    &-desc{
+        border: 1px solid rgba(128, 128, 128, 0.171);
+        border-radius: 0.4rem;
+        padding: 2rem;
+
+    }
+   
+    &-problem{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        &-wrapper{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            &-title{
+                font-weight: 800;
+                font-size: 1.6rem;
+
+            }
+        }
+        @media screen and (max-width:1228px) {
+            flex-direction: column;
+            
+            
+        }
+      
+    }
+}

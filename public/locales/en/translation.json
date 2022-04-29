@@ -37,6 +37,22 @@
     "startingFrom":"Starting From",
     "inCario":"In Cario",
     "pricingSubtitle":"From documents to products, deliver shipments to any location in Egypt.",
-    "pricingVat":"*Price before fees & VAT"
+    "pricingVat":"*Price before fees & VAT",
+    "lastUpdate":"Last Update",
+    "merchantName":"Merchant Name",
+    "promisedData":"Promised Date",
+    "shipmentCreated":"Shipment Created",
+    "shipmentReceivedFromMerchant":"Shipment Received From Merchant",
+    "shipmentOutForDeleivery":"Shipment Out For Deleivery",
+    "shipmentDeliverd":"Shipment delivered",
+    "shipmentDetails":"Shipment Details",
+    "branch":"Branch",
+    "date":"Date",
+    "time":"Time",
+    "details":"Details",
+    "addressName":"Address Name",
+    "IsthereProblemInYourShipment":"Is there any problem in your shipment?!",
+    "reportProblem":"Report Problem"
+
 
   }
